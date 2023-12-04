@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM1 Campaign Program</title>
+  <style>
+    body {
+      font-family: 'Verdana', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #7bc2b9;
+    }
+
+    header {
+     font-family: 'Lobster', serif;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .centered-text {
+      text-align: center;
+    }
+
+    section img {
+      text-align: center;
+      display: block;
+      margin: auto;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input,
+    select {
+      
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #942424;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      section {
+        padding: 10px;
+      }
+    }
+
+    .highlighted-section {
+      background-color: #fdeff8; 
+    }
+
+    .highlighted-section2 {
+      background-color: #dcffdc; 
+    }
+
+    #scrollToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #scrollToTopBtn:hover {
+      background-color: #942424;
+    }
+  </style>
+    
+</head>
+
+<body>
+
+  <header>
+    
+    <h1>'Let your contributions be perpetual for the pleasure of Allah S.W.T.'</h1h1>
+  </header>
+
+  <section>
+    <h2 class="centered-text"> Assalamualaikum</h2>
+    <img src="iium.png" alt="IIUM Logo" width="150" height="150"> <br>
+    <img src="rm1.png" alt="Program Image">
+    <h4 class="centered-text"> “The example of those who spend their wealth in the 
+        way of Allah is like a seed [of grain] which grows seven 
+        spikes; in each spike is a hundred grains. And Allah 
+        multiplies [His reward] for whom He wills. And Allah is 
+        all-Encompassing and Knowing.”
+        Al Baqarah:261</h4>
+  </section>
+  
+
+  <section class="highlighted-section2">
+    <h1>Details</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+
+      <label for="staffNo">Staff Number:</label>
+      <input type="text" id="staffNo" name="staffNo" required>
+      <br>
+
+      <label for="department">K/C/D/I/O:</label>
+      <input type="text" id="department" name="department" required>
+      <br>
+
+      <label for="contactNo">Contact Number:</label>
+      <input type="tel" id="contactNo" name="contactNo" required>
+      <br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+
+      <label for="amount">Amount to be Deducted (RM):</label>
+      <input type="number" id="amount" name="amount" required>
+      <br>
+
+
+      <br>The above salary deduction will take effect from 
+      <input type="date" id="startDate" name="startDate" required>
+      until
+      <input type="date" id="endDate" name="endDate" required>
+      <br>
+      
+
+      <br> <label for="kulliyyah">For Kulliyyah of (If applicable):</label>
+      <input type="text" id="kulliyyah" name="kulliyyah" required>
+      <br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section class="highlighted-section">
+    <img src="ContactUs.png" alt="IIUM Logo" width="400">
+    <h2 class="centered-text" >IIUM Endowment Fund Contact Information</h2>
+    <p>If you have any questions or need assistance, feel free to contact us:</p>
+  <ul>
+   
+    <li>IIUM Endowment Fund,
+        <br>Level 3, 
+        <br>Rectory Building,
+        <br>International Islamic University Malaysia</li>
+    <li>Tel : 03 6196 4268</li>
+    <li>Email: <a href="ief@iium.edu.my">ief@iium.edu.my</a></li>
+    <li>Website : <a href="www.iium.edu.my/ief">www.iium.edu.my/ief</a></li>
+  </ul>
+
+  </section>
+  <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
+  <script>
+   function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    
+    window.addEventListener('scroll', function () {
+      const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = 'block';
+      } else {
+        scrollToTopBtn.style.display = 'none';
+      }
+    });
+    </script>
+
+</body>
+</html>
+
